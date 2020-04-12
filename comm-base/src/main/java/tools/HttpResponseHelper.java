@@ -1,8 +1,5 @@
 package tools;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
@@ -10,7 +7,6 @@ import java.util.zip.GZIPOutputStream;
 
 public class HttpResponseHelper {
 
-	protected static Logger logger = LoggerFactory.getLogger(HttpResponseHelper.class);
 	public static final int BUFFER = 1024;
 
 	public static void responseJson(String jsonStr, final HttpServletResponse response) throws IOException

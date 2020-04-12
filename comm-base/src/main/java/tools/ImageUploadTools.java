@@ -1,8 +1,8 @@
 package tools;
 
-import myblog.common.pub.MyManagerException;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
+import pub.MyManagerException;
 
 import java.io.File;
 import java.io.IOException;
