@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 //@FeignClient 标识服务
-@FeignClient("accountservice")
+@FeignClient(value = "accountservice",fallback = AccountClientFallbackImpl.class)
 public interface AccountClient {
 
     @RequestMapping(
